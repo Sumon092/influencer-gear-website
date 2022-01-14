@@ -11,7 +11,6 @@ CSS common section
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #AAAAAA;
 }
 .container{
     max-width: 1200px;
@@ -28,8 +27,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    margin-bottom: 30px;
+    height: 100px;
+    margin: 15px;
+}
+.navigation-left h3{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1.5em;
 }
 .navigation-right{
 display: flex;
@@ -37,7 +40,7 @@ justify-content: center;
 }
 .navigation-right .icon{
     margin-right: 5px;
-    color: rgba(0, 0, 0, 0.89);
+    color: rgba(0, 0, 0, 0.836);
 }
 ul{
     display: flex;
@@ -47,6 +50,52 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: #000;
+    color: rgba(0, 0, 0, 0.849);
     padding: 10px;
 }
+/*--------------------------
+ Css for Banner section 
+ ----------------------------*/
+.banner{
+    display: grid;
+    grid-template-columns: 650px 450px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.section-title h1{
+    font-size: 45px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.792);
+}
+.banner-left p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.primary-button{
+    padding: 10px 30px;
+    color:#fff;
+    background-image: linear-gradient(rgb(243, 7, 97),rgb(224, 9, 160));
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+.primary-button .arrow{
+    margin-left: 10px;
+}
+.banner-right{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-right img{
+    width: 100%;   
+}
+.banner-right img:hover{
+    transform: scale(90deg);
+}
+
