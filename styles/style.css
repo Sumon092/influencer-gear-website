@@ -217,6 +217,53 @@ footer p,h5{
     color: #fff;
       
 }
+/* ----------------------------------------
+css for mobile
+------------------------------------------- */
+@media only screen and (max-width: 688px){
+    .container{
+        max-width: 0 auto;
+    }
+    .section-title h2,h1,p,h3,h4{
+        text-align: center;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-left{
+        width: fit-content;
+        order: 2;
+    }
+    .navigation-right{
+        display: none;
+    }
+    .bannerleft .primary-button{
+        text-align: center;
+    }
+    .e-commerces{
+        grid-template-columns: repeat(4,1fr);
+        padding: 30px;
+        border: none;
+        max-height: 100px;
+    }
+    .popular-collection{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .container-middle{
+        margin: 0 auto;
+        justify-items: center;
+    }
+    .product-rating{
+        text-align: center;
+    }
+    .bd-influencer{
+        grid-template-columns: 1fr;
+    }
+    .influencer-title{
+        order: 1;
+    }
+}
 
 
 
